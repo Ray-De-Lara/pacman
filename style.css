@@ -1,0 +1,134 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: solid black;
+}
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+.container h3{
+    font-size: 30px;
+    position: absolute;
+    margin-top: 700px;
+}
+.container span {
+    position: absolute;
+    margin-top: 800px;
+    font-size: 35px;
+}
+
+.pac-dot{
+    background-color: green;
+    border:5px solid white;
+    box-sizing: border-box;
+}
+.wall{
+    background-color: blue;
+}
+.power-pellet{
+    background-color: green;
+    border-radius: 10px;
+}
+
+
+.pac-man{
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.blinky{
+    background-color: red;
+    border: 0;
+}
+.pinky{
+    background-color: pink;
+    border: 0;
+}
+.inky{
+    background-color: cyan;
+    border: 0;
+}
+.clyde{
+    background-color: orange;
+    border: 0;
+}
+.scared-ghost{
+    background-color: aquamarine;
+    border: 0;
+}
+.buttons{
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    
+    .container{
+    margin-top: -100px;
+    }
+    .buttons{
+
+        margin-top: -80px;
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+ 
+        
+    }
+    .up{
+        font-size: 20px;
+        position: absolute;
+        margin-top: -110px;
+        padding: 20px;
+    }
+    .left{
+        font-size: 20px;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: -140px;
+        padding: 20px;
+    }
+    .right{
+        font-size: 20px;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 140px;
+        padding: 20px;
+    }
+    .down{
+        font-size: 20px;
+        position: absolute;
+        margin-top: 110px;
+        margin-left: 0px;
+        padding: 20px;
+    }
+    .grid{
+        width: 280px;
+        height: 280px;
+    }
+    .grid div{
+        width: 10px;
+        height: 10px;
+    }
+    .pac-dot{
+        border:2.5px solid white;
+    }
+    .container h3{
+        margin-top: 400px;
+    }
+    .container span {
+        margin-top: 500px;
+    }
+    
+}
